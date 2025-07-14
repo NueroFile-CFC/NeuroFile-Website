@@ -1,0 +1,221 @@
+#about-page {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ padding: 0 15vw;
+ gap: 5vw;
+ color: white;
+}
+
+#about-problem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vh;
+    padding-top: 2vh;
+}
+
+#about-solution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vh;
+    padding-top: 2vh;
+}
+
+#about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 0;
+    color: white;
+}
+
+#about-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20vw;
+    color: white;
+}
+
+#about-fabian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+#about-fabian-picture {
+    border: 1px solid white;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-christian {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+#about-christian-picture {
+    border: 1px solid white;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-chris {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+#about-chris-picture {
+    border: 1px solid white;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-vision {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5vh;
+    color: white;
+}
+
+#about-vision-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    height: 12vh;
+    width: 85vw
+}
+
+#about-fabian-linkedin img {
+    width: 2vw;
+    height: 3vh
+}
+
+#about-fabian-linkedin {
+    display: flex;
+    align-items: center;
+}
+
+#about-fabian-linkedin a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+#about-fabian-github img {
+      width: 2vw;
+    height: 2vh
+}
+
+#about-fabian-github {
+ display: flex;
+    align-items: center;
+} 
+
+#about-fabian-github a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+#about-fabian-links {
+    border: 1px solid white;
+     height: 7vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-chris-linkedin img {
+    width: 2vw;
+    height: 3vh
+}
+
+#about-chris-linkedin {
+    display: flex;
+    align-items: center;
+}
+
+#about-chris-linkedin a {
+    /* text-decoration: none; */
+    color: white
+}
+
+#about-chris-github img {
+      width: 2vw;
+    height: 2vh
+}
+
+#about-chris-github a {
+    /* text-decoration: none; */
+    color: white
+}
+
+#about-chris-github {
+ display: flex;
+    align-items: center;
+} 
+
+#about-chris-links {
+    border: 1px solid white;
+     height: 7vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-christian-linkedin img {
+    width: 2vw;
+    height: 3vh
+}
+
+#about-christian-linkedin {
+    display: flex;
+    align-items: center;
+}
+
+#about-christian-linkedin a {
+    /* text-decoration: none; */
+    color: white
+}
+
+#about-christian-github img {
+      width: 2vw;
+    height: 2vh
+}
+
+#about-christian-github a {
+    /* text-decoration: none; */
+    color: white
+}
+
+#about-christian-github {
+ display: flex;
+    align-items: center;
+} 
+
+#about-christian-links {
+    border: 1px solid white;
+     height: 7vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

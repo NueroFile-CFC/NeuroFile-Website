@@ -1,1 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
+
+
+body {
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+/* 
+install extension
+
+go to open ai and get your own api key 
+
+
+*/

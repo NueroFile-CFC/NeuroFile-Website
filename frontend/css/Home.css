@@ -1,0 +1,51 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+    color: white;
+}
+
+#home-slogan {
+    margin-top: 1vh;
+}
+
+#home-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 70vw;
+    height: 50vh;
+}
+
+#home-benefits {
+ /* display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: .2vh solid white;
+    width: 70vw;
+    height: 20vh;
+    font-size: 1.3vw;
+    gap: 2vw;
+    overflow-y: auto;
+    overflow-x: auto */
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 3vw;
+    margin-top: 5vh;
+}
+
+
+
+
+#home-install {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2vh solid white;
+    width: 70vw;
+    height: 5vh;
+    margin-top: 5vh;
+}

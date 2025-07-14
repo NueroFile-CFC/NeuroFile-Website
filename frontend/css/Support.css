@@ -1,0 +1,102 @@
+#support-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#support-title {
+    /* text-shadow: 0px 0px 10px #05EDF5; */
+    color: #1893D4;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0px 0px 20px #1893D4, 0px 0px 20px #1893D4;
+    margin-top: 3vh;
+}
+
+#support-chatroom {
+    border: 1px solid transparent;
+    margin-top: 2vh;
+    border-radius: 10px;
+    height: 65vh;
+    width: 40vw;
+    background: radial-gradient(circle, #011A37, black);
+    overflow-y: auto; 
+}
+
+#support-text {
+    height: 10vh;
+    width: 40vw;
+    border-radius: 10px; 
+    border: 1px solid #1893D4;
+    resize: none;
+    padding-left: 1vw;
+    color: #1893D4;
+    background-color: black;
+}
+
+#support-user  {
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+
+#support-image {
+width: 3vw;
+height: 5vh;
+}
+
+#support-talk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#support-user-message {
+            width: 18vw;
+            word-wrap: break-word;
+            border: 1px solid white;
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 1vh;
+            color: #1893D4;
+}
+
+/* #support-user-messages {
+    display: flex;
+    padding-left: 1vh;
+    padding-top: 2vh;
+}
+
+#support-user-box {
+            width: 15vw;
+            word-wrap: break-word;
+            border: 1px solid white;
+            background-color: black;
+            border-radius: 10px;
+            padding: 1vh;
+} */
+
+
+#support-response {
+     display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 1vw;
+    padding-top: 1vh;
+}
+
+#support-response h3 {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px
+}
+
+#support-text::placeholder {
+     color: #1893D4;
+}

@@ -1,0 +1,103 @@
+#installation-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#installation-steps {
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10vh; 
+    width: 98vw;
+    color: white;
+}
+
+#installation-first-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#installation-first-step-pic {
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 15vw;
+    height: 30vh;
+}
+
+#installation-second-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#installation-second-step-pic {
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 15vw;
+    height: 30vh;
+}
+
+#installation-third-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#installation-third-step-pic {
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 15vw;
+    height: 30vh;
+}
+
+#installation-fourth-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#installation-fourth-step-pic {
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 15vw;
+    height: 100vh;
+}
+
+#installation-first-step li {
+    width: 15vw;
+    height: 25vh;
+    word-wrap: break-word;
+}
+
+#installation-second-step li {
+    width: 15vw;
+    height: 25vh;
+    word-wrap: break-word;
+}
+
+#installation-third-step li {
+    width: 15vw;
+    height: 25vh;
+    word-wrap: break-word;
+}
+
+#installation-fourth-step li {
+    width: 15vw;
+    height: 25vh;
+    word-wrap: break-word;
+}
+

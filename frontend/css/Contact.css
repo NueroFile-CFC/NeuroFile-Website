@@ -1,0 +1,52 @@
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vh;
+    color: white;
+}
+
+#contact-form {
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    border: 1px solid white;
+    background: radial-gradient(circle, #011A37, black);
+    border-radius: 10px;
+    width: 40vw;
+    height: 60vh;
+    gap: 5vh;
+}
+
+#contact-name {
+    width: 30vw;
+    height: 4vh;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#contact-email {
+    width: 30vw;
+    height: 4vh;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#contact-message {
+    width: 30vw;
+    height: 22vh;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#contact-button {
+    margin-top: -2vh;
+}
+
+
+
+
+
+
