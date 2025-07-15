@@ -3,15 +3,44 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
-    height: 13vh;
+    height: 110px;
     width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+}
+
+#navbar-title {
+    display: flex;
+
+}
+
+
+#navbar-slogan {
+    display:flex;
+    flex-direction: column;
+    color: white;
+}
+
+#navbar-slogan-halves {
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+}
+
+#navbar-title-build {
+    margin-left: 4px;
+color: #1893D5;
 }
 
 #navbar-logo-title {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 3.1vw;
+   padding-left: 20px;
+   padding-top: 5px;
 }
 
 #navbar-neuro-title {
@@ -25,12 +54,26 @@
 #navbar-links {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 5vw;
+    margin-top: 10px;
 }
 
 #navbar-links a {
     text-decoration: none;
     color: #1893D5;
+}
+
+#navbar-links-top {
+     display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+
+#navbar-links-top a {
+    gap: 5vw;
+    color:white; 
 }
 
 #logo {

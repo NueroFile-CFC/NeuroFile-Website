@@ -1,8 +1,48 @@
+import { useState, type SetStateAction } from "react"
 const Home = () => {
+    const [videoIndex, setVideoIndex] = useState<number>(0)
+
+    const videoTitles: string[] = [
+        'summarize file',
+        'summarize function',
+        'generate psuedocode',
+        'generate time-complexity'
+    ]
+
+    const videos: string[] = [
+        '/summarizeFile.mp4',
+        '/summarizeFunction.mp4',
+        '/generatePseudocode.mp4',
+        '/generateTimeComplexity.mp4'
+    ]
+
+const currentVideo = (index: SetStateAction<number>) => {
+setVideoIndex(index)
+}
+
+    const previousVideo = () => {
+        setVideoIndex((prev) => prev === 0 ? videos.length - 1 : prev - 1)
+    }
+
+    const nextVideo = () => {
+        setVideoIndex((prev) => prev === videos.length - 1 ? 0 : prev + 1)
+    }
     return (
         <div id = 'home'>
-        <h2 id = 'home-slogan'>Get to know your Codebase. Build smarter.</h2>
-        <h3 id = 'home-demo'>video/gif demo</h3>
+        {/* <h2 id = 'home-slogan'>Get to know your Codebase. Build smarter.</h2> */}
+        {/* <h3 id = 'home-demo'>video/gif demo</h3> */}
+        <div id = 'home-video'>
+        <button onClick = {previousVideo}><img id = 'home-left-arrow' src = '/leftArrow.png' /></button>
+          <div id = 'home-video-bar'>
+             <div id = 'home-video-title'>
+            {videoTitles.map((value, index) => (
+                 <button onClick = {() => currentVideo(index)} key = {index} id = 'home-video-titles' style = {{marginRight: '20px',padding: '5px 40px', backgroundColor: index === videoIndex ? 'white' : 'black', boxShadow: index === videoIndex ? '0px 0px 10px white' : 'none', fontSize: index === videoIndex ? '22px' : '18px'}}>{value}</button>
+            ))}
+            </div>
+        <video autoPlay loop muted id = 'home-demo' src = {videos[videoIndex]}></video>
+        </div>
+        <button onClick = {nextVideo}><img id = 'home-right-arrow' src = '/rightArrow.png' /></button>
+        </div>
         <ul id = 'home-benefits'>
 <li> 🚀 Faster Onboarding
 Instantly understand unfamiliar code without digging through every line.
@@ -23,7 +63,9 @@ Spend less time deciphering logic and more time building features.
 Make sense of poorly documented or outdated codebases in seconds.
 </li>
             </ul>
-        <h3 id = 'home-install'>Extension install link</h3>
+            <div id = 'home-install-box'>
+        <h3 id = 'home-install'>Download NeuroFile extension to your VSCode here !<button><a href="vscode://">  NeuroFile</a></button></h3>
+        </div>
         </div>
     )
 }

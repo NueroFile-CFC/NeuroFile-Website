@@ -13,6 +13,7 @@
     background-color: black;
     box-shadow: 0px 0px 20px #1893D4, 0px 0px 20px #1893D4;
     margin-top: 3vh;
+    margin-top: 130px;
 }
 
 #support-chatroom {
@@ -21,7 +22,7 @@
     border-radius: 10px;
     height: 65vh;
     width: 40vw;
-    background: radial-gradient(circle, #011A37, black);
+    background: radial-gradient(circle, #012c5c, black);
     overflow-y: auto; 
 }
 

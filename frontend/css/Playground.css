@@ -6,6 +6,10 @@
     color: white;
 }
 
+#playground-title {
+margin-top: 110px;
+}
+
 #playground-box {
     display: flex;
     flex-direction: column;
