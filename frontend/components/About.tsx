@@ -25,7 +25,7 @@ const About = () => {
          <div id = 'about-team'>
             <div id = 'about-christian'>
             <h3>Christian Sellers</h3>
-           <img src = '/person.png' id = 'about-christian-picture' />
+           <img src = '/christianPic.jpg' id = 'about-christian-picture' />
             <div id = 'about-christian-links'>
            <div id = 'about-christian-linkedin'>
             <img src = '/linkedIn.png' /><a href = 'https://www.linkedin.com/in/paul-sellers-1b4729278' target="_blank" id = 'about-christian-linkedin-link'>LinkedIn</a>

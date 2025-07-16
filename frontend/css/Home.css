@@ -4,9 +4,10 @@
     align-items: center;
     gap: 1.5vh;
     color: white; */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 30px; */
+
 }
 
 #home-video {
@@ -14,16 +15,17 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-gap: 10px;
+/* gap: 10px; */
+
 }
 
 #home-video-bar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     font-size: 21.5px;
-    margin-bottom: 150px;
+    
 }
 
 #home-video-title {
@@ -31,9 +33,9 @@ gap: 10px;
     align-items: center;
     justify-content: center;
     color: #1893D4;  
-    margin-bottom: -15px;
-    margin-left: 20px;
-    margin-top: 150px;
+    /* margin-bottom: -15px;
+    margin-left: 20px; */
+    
 }
 
 
@@ -41,28 +43,41 @@ gap: 10px;
     border: 1px solid white;
      background-color: black;
     border-radius: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
     font-size: 17px;
     color: #1893D4;
+    /* margin-top: 20px; */
 }
 
-#home button {
-padding: 0;
+
+
+
+
+#home-left-arrow {
+      width: 35px;
+    height: 30px;
+      padding: 0;
 background-color: black;
 border: 1px solid white;
 }
 
-#home-left-arrow {
-    width: 35px;
-    height: 30px;
-    background-color: black;
+#home-left-arrow-button {
+     padding: 0;
+background-color: black;
+border: 1px solid white;
+}
+
+#home-right-arrow-button {
+     padding: 0;
+background-color: black;
+border: 1px solid white;
 }
 
 #home-right-arrow {
     width: 35px;
     height: 30px;
-    background-color: black;
+      padding: 0;
+background-color: black;
+border: 1px solid white;
 }
 
 
@@ -70,7 +85,7 @@ border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     color: white;
     font-size: 30px;
 }
@@ -88,10 +103,10 @@ border: 1px solid white;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 3vw;
-    margin-top: -100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* gap: 3vw; */
+    /* margin-top: -100px; */
+    /* margin-left: 100px;
+    margin-right: 100px; */
     color: white;
     /* border: 1px solid blue; */
 }
@@ -120,10 +135,10 @@ border: 1px solid white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    /* width: 50vw; */
     height: 5vh;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    /* margin-top: 70px; */
+    /* margin-bottom: 50px; */
     color: white;
      font-size: 20px;
 }
@@ -133,7 +148,6 @@ border: 1px solid white;
     width: 150px;
     border: 1px solid white;
     border-radius: 30px;
-    margin-top: 10px;
     padding: 5px 10px;
 }
 
@@ -147,3 +161,514 @@ border: 1px solid white;
     font-size: 20px;
 }
 
+@media screen and (max-width: 449px ) {
+
+   #home-video-titles {
+  width: 70px;
+  padding: 3px;
+    font-size: 5.5px;
+  }
+
+  #home-video-title {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 3px;
+    padding-top: 145px;
+  }
+
+  #home-video-bar {
+     display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #home-demo {
+    width: 318px;
+    height: 145px;
+  }
+
+  #home-right-arrow-button {
+      height: 11px;
+    width: 11px;
+    border: 0px solid white;
+  }
+
+  #home-right-arrow {
+    width:11px;
+    height: 11px;
+    border: 1px solid white;
+  }
+
+  #home-left-arrow-button {
+    height: 11px;
+    width: 11px;
+    border: 0px solid white;
+  }
+
+  #home-left-arrow {
+    width: 11px;
+    height: 11px;
+    border: 1px solid white;
+  }
+
+  #home-benefits {
+    padding-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    font-size: 9px;
+    gap: 20px;
+    padding-left: 25px;
+    padding-right: 30px;
+  }
+
+  #home-benefits li {
+    padding: 10px;
+  }
+
+  #home-install {
+   font-size: 11px;
+   width: 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  #home-install a{
+    font-size: 10px;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 450px ) and (max-width: 749px){
+
+  #home-video-titles {
+  width: 75px;
+  padding: 5px;
+    font-size: 5.5px;
+  }
+
+  #home-video-title {
+    display: flex;
+    gap: 3px;
+    padding-top: 155px;
+  }
+
+  #home-video-bar {
+     display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #home-demo {
+    width: 400px;
+    height: 185px;
+  }
+
+  #home-right-arrow-button {
+      height: 15px;
+    width: 15px;
+    border: 0px solid white;
+  }
+
+  #home-right-arrow {
+    width:15px;
+    height: 15px;
+  }
+
+  #home-left-arrow-button {
+    height: 15px;
+    width: 15px;
+    border: 0px solid white;
+  }
+
+  #home-left-arrow {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+  }
+
+  #home-benefits {
+    padding-top: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    font-size: 7px;
+    gap: 40px;
+    padding-right: 30px;
+  }
+
+  #home-benefits li {
+    padding: 20px;
+  }
+
+  #home-install {
+   font-size: 15px;
+   width: 100%;
+    padding-top: 150px;
+    padding-bottom: 120px;
+  }
+
+  #home-install a{
+    font-size: 12px;
+    padding: 2px;
+  }
+}
+
+@media screen and (min-width: 750px ) and (max-width: 999px){
+
+  #home-video-titles {
+  width: 120px;
+  padding: 10px;
+    font-size: 8px;
+  }
+
+  #home-video-title {
+    display: flex;
+    gap: 10px;
+    padding-top: 175px;
+  }
+
+  #home-video-bar {
+     display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #home-demo {
+    width: 590px;
+    height: 265px;
+  }
+
+  #home-right-arrow-button {
+    height: 25px;
+    width: 25px;
+  }
+
+  #home-right-arrow {
+    width:25px;
+    height: 25px;
+  }
+
+  #home-left-arrow-button {
+    height: 25px;
+    width: 25px;
+  }
+
+  #home-left-arrow {
+    width: 25px;
+    height: 25px;
+  }
+
+  #home-benefits {
+    padding-top: 90px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    font-size: 10.6px;
+    gap: 40px;
+    padding-right: 30px;
+  }
+
+  #home-benefits li {
+    padding: 30px;
+  }
+
+  #home-install {
+   font-size: 23px;
+   width: 100%;
+    padding-top: 150px;
+    padding-bottom: 120px;
+  }
+
+  #home-install a{
+    font-size: 15px;
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 1000px ) and (max-width: 1199px){
+
+  #home-video-titles {
+  width: 160px;
+  padding: 10px;
+    font-size: 12px;
+  }
+
+  #home-video-title {
+    display: flex;
+    gap: 10px;
+    padding-top: 175px;
+  }
+
+  #home-video-bar {
+     display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #home-demo {
+    width: 760px;
+    height: 355px;
+  }
+
+  #home-right-arrow-button {
+    height: 30px;
+    width: 30px;
+  }
+
+  #home-right-arrow {
+    width:30px;
+    height: 30px;
+  }
+
+  #home-left-arrow-button {
+    height: 30px;
+    width:30px;
+  }
+
+  #home-left-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  #home-benefits {
+    padding-top: 90px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    font-size: 14.5px;
+    gap: 40px;
+    padding-right: 30px;
+  }
+
+  #home-benefits li {
+    padding: 30px;
+  }
+
+  #home-install {
+   font-size: 25px;
+   width: 100%;
+    padding-top: 150px;
+    padding-bottom: 120px;
+  }
+
+  #home-install a{
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px ) and (max-width: 1599px){
+
+  #home-video-titles {
+  width: 180px;
+  padding: 15px;
+    font-size: 13px;
+  }
+
+  #home-video-title {
+    display: flex;
+    gap: 10px;
+    padding-top: 175px;
+  }
+
+  #home-video-bar {
+     display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #home-demo {
+    width: 865px;
+    height: 385px;
+  }
+
+  #home-right-arrow-button {
+    height: 40px;
+    width: 40px;
+  }
+
+  #home-right-arrow {
+    width:40px;
+    height: 40px;
+  }
+
+  #home-left-arrow-button {
+    height: 40px;
+    width:40px;
+  }
+
+  #home-left-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  #home-benefits {
+    padding-top: 90px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    font-size: 16px;
+    gap: 40px;
+    padding-right: 30px;
+  }
+
+  #home-benefits li {
+    padding: 40px;
+  }
+
+  #home-install {
+   font-size: 25px;
+   width: 100%;
+    padding-top: 150px;
+    padding-bottom: 120px;
+  }
+
+  #home-install a{
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1600px ) and (max-width: 1999px){
+
+  #home-video-titles {
+  width: 250px;
+  padding: 20px;
+    font-size: 18px;
+  }
+
+  #home-video-title {
+    display: flex;
+    gap: 10px;
+    padding-top: 175px;
+  }
+
+  #home-video-bar {
+     display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #home-demo {
+    width: 1175px;
+    height: 530px;
+  }
+
+  #home-right-arrow-button {
+    height: 55px;
+    width: 55px;
+  }
+
+  #home-right-arrow {
+    width:55px;
+    height: 55px;
+  }
+
+  #home-left-arrow-button {
+    height: 55px;
+    width:55px;
+  }
+
+  #home-left-arrow {
+    width: 55px;
+    height: 55px;
+  }
+
+  #home-benefits {
+    padding-top: 90px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    font-size: 21.3px;
+    gap: 40px;
+    padding-right: 30px;
+  }
+
+  #home-benefits li {
+    padding: 60px;
+  }
+
+  #home-install {
+   font-size: 30px;
+   width: 100%;
+    padding-top: 140px;
+    padding-bottom: 120px;
+  }
+
+  #home-install a{
+    font-size: 25px;
+  }
+
+  #home-install button {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (min-width: 2000px ){
+
+  #home-video-titles {
+  width: 282px;
+  padding: 25px;
+    font-size: 20px;
+  }
+
+  #home-video-title {
+    display: flex;
+    gap: 20px;
+    padding-top: 225px;
+  }
+
+  #home-video-bar {
+     display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  }
+
+  #home-demo {
+    width: 1365px;
+    height: 595px;
+  }
+
+  #home-right-arrow-button {
+    height: 60px;
+    width: 60px;
+  }
+
+  #home-right-arrow {
+    width:60px;
+    height: 60px;
+  }
+
+  #home-left-arrow-button {
+    height: 60px;
+    width:60px;
+  }
+
+  #home-left-arrow {
+    width: 60px;
+    height: 60px;
+  }
+
+  #home-benefits {
+    padding-top: 110px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    font-size: 25px;
+    gap: 80px;
+    padding-right: 30px;
+  }
+
+    #home-benefits li {
+    padding: 60px 60px;
+  }
+
+  #home-install {
+   font-size: 30px;
+   width: 100%;
+    padding-top: 150px;
+    padding-bottom: 120px;
+  }
+
+  #home-install a{
+    font-size: 30px;
+    padding: 20px;
+  }
+
+}
