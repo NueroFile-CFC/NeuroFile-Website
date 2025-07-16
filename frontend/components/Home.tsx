@@ -32,18 +32,16 @@ setVideoIndex(index)
         {/* <h2 id = 'home-slogan'>Get to know your Codebase. Build smarter.</h2> */}
         {/* <h3 id = 'home-demo'>video/gif demo</h3> */}
         <div id = 'home-video'>
-        <button onClick = {previousVideo}><img id = 'home-left-arrow' src = '/leftArrow.png' /></button>
           <div id = 'home-video-bar'>
              <div id = 'home-video-title'>
+             <button id = 'home-left-arrow-button' onClick = {previousVideo}><img id = 'home-left-arrow' src = '/leftArrow.png' /></button>
             {videoTitles.map((value, index) => (
-                 <button onClick = {() => currentVideo(index)} key = {index} id = 'home-video-titles' style = {{marginRight: '20px',padding: '5px 40px', backgroundColor: index === videoIndex ? 'white' : 'black', boxShadow: index === videoIndex ? '0px 0px 10px white' : 'none', fontSize: index === videoIndex ? '22px' : '18px'}}>{value}</button>
+                 <button onClick = {() => currentVideo(index)} key = {index} id = 'home-video-titles' style = {{ backgroundColor: index === videoIndex ? 'white' : 'black', boxShadow: index === videoIndex ? '0px 0px 10px white' : 'none'}}>{value}</button>
             ))}
+            <button id = 'home-right-arrow-button' onClick = {nextVideo}><img id = 'home-right-arrow' src = '/rightArrow.png' /></button>
             </div>
         <video autoPlay loop muted id = 'home-demo' src = {videos[videoIndex]}></video>
-        </div>
-        <button onClick = {nextVideo}><img id = 'home-right-arrow' src = '/rightArrow.png' /></button>
-        </div>
-        <ul id = 'home-benefits'>
+                <ul id = 'home-benefits'>
 <li> 🚀 Faster Onboarding
 Instantly understand unfamiliar code without digging through every line.
 </li>
@@ -63,6 +61,8 @@ Spend less time deciphering logic and more time building features.
 Make sense of poorly documented or outdated codebases in seconds.
 </li>
             </ul>
+        </div>
+        </div>
             <div id = 'home-install-box'>
         <h3 id = 'home-install'>Download NeuroFile extension to your VSCode here !<button><a href="vscode://">  NeuroFile</a></button></h3>
         </div>
