@@ -30,7 +30,7 @@ const Support = () => {
 
     return (
         <div id = 'support-page'>
-            <h1 id = 'support-title'>How can we help you ?</h1>
+            <h1 id = 'support-title'>How can we help you?</h1>
             <div id = 'support-chatroom'>
                 <div id = 'support-user'>
                     {usersMessages.map((value, index) => (
