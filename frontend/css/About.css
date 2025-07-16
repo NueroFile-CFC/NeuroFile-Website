@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
 #about-page {
  display: flex;
  flex-direction: row;
@@ -6,93 +9,159 @@
  padding: 0 15vw;
  gap: 5vw;
  color: white;
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+ position: relative;
 }
 
-#about-problem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2vh;
-    padding-top: 2vh;
-    margin-top: 110px;
-}
-
+/* Problem and Solution Sections */
+#about-problem,
 #about-solution {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2vh;
-    padding-top: 2vh;
-    margin-top: 110px;
+    font-size: 14px;
+    padding: 25px 20px;
+    margin-top: 200px;
+    background: radial-gradient(circle, #0c3464, rgb(5, 5, 5)); 
+    border: 2px solid rgb(0, 119, 255);
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 40px rgba(71, 155, 251, 0.15),
+        0 8px 16px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);    
+    max-width: 550px;
+    position: relative;
+    overflow: hidden;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.6px;
+}
+
+#about-problem::before,
+#about-solution::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(71, 155, 251, 0.6), transparent);
+}
+
+#about-problem:hover,
+#about-solution:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 32px 64px rgba(71, 155, 251, 0.25),
+        0 16px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        border-color: rgba(148, 211, 255, 0.6);
 }
 
 #about-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3vh 0;
+    padding: 40px 20px;
     color: white;
+    font-size: 42px;
+    background: linear-gradient(135deg, #479bfb 0%, #1893d4 50%, #94d3ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    letter-spacing: -0.5px;
+    position: relative;
 }
 
+#about-title::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    border-radius: 2px;
+}
+
+/* Team Section */
 #about-team {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20vw;
-    color: white;
+    gap: 225px;
+    color: #f1f5f9;
+    padding: 40px 0;
+    width: 100%;
+    margin-top: 50px;
 }
 
-#about-fabian {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1vh;
-}
-#about-fabian-picture {
-    border: 1px solid white;
-    height: 30vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about-christian {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1vh;
-}
-#about-christian-picture {
-    border: 1px solid white;
-    height: 30vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+#about-fabian,
+#about-christian,
 #about-chris {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1vh;
+    gap: 15px;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
+
+#about-fabian { animation-delay: 0.1s; }
+#about-christian { animation-delay: 0.1s; }
+#about-chris { animation-delay: 0.1s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#about-fabian-picture,
+#about-christian-picture,
 #about-chris-picture {
-    border: 1px solid white;
-    height: 30vh;
-    width: 15vw;
+    border: 3px solid rgb(0, 119, 255);
+    height: 280px;
+    width: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    box-shadow: 
+        0 20px 40px rgba(71, 155, 251, 0.15),
+        0 8px 16px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(12px);
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500
 }
 
+#about-fabian-picture:hover,
+#about-christian-picture:hover,
+#about-chris-picture:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 48px rgba(71, 155, 251, 0.25), 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #94d3ff;
+}
+
+/* Vision Section */
 #about-vision {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 5vh;
-    color: white;
+    padding-top: 15px;
+    color: #f1f5f9;
+    width: 100%;
 }
 
 #about-vision-message {
@@ -100,124 +169,112 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
-    height: 12vh;
-    width: 85vw
+    border: 1.5px solid #479bfb;
+    height: 80px;
+    width: 90%;
+    max-width: 950px;
+    border-radius: 16px;
+    background: radial-gradient(circle, #0c3464, rgb(5, 5, 5)); 
+    box-shadow: 0 8px 32px rgba(71, 155, 251, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(12px);
+    position: relative;
+    overflow: hidden;
 }
 
-#about-fabian-linkedin img {
-    width: 2vw;
-    height: 3vh
+#about-vision-message:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(71, 155, 251, 0.25), 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #94d3ff;
 }
 
-#about-fabian-linkedin {
-    display: flex;
-    align-items: center;
-}
-
-#about-fabian-linkedin a {
-    /* text-decoration: none; */
-    color: white;
-}
-
-#about-fabian-github img {
-      width: 2vw;
-    height: 2vh
-}
-
-#about-fabian-github {
- display: flex;
-    align-items: center;
-} 
-
-#about-fabian-github a {
-    /* text-decoration: none; */
-    color: white;
-}
-
-#about-fabian-links {
-    border: 1px solid white;
-     height: 7vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#about-chris-linkedin img {
-    width: 2vw;
-    height: 3vh
-}
-
-#about-chris-linkedin {
-    display: flex;
-    align-items: center;
-}
-
-#about-chris-linkedin a {
-    /* text-decoration: none; */
-    color: white
-}
-
-#about-chris-github img {
-      width: 2vw;
-    height: 2vh
-}
-
-#about-chris-github a {
-    /* text-decoration: none; */
-    color: white
-}
-
-#about-chris-github {
- display: flex;
-    align-items: center;
-} 
-
-#about-chris-links {
-    border: 1px solid white;
-     height: 7vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#about-christian-linkedin img {
-    width: 2vw;
-    height: 3vh
-}
-
-#about-christian-linkedin {
-    display: flex;
-    align-items: center;
-}
-
-#about-christian-linkedin a {
-    /* text-decoration: none; */
-    color: white
-}
-
-#about-christian-github img {
-      width: 2vw;
-    height: 2vh
-}
-
-#about-christian-github a {
-    /* text-decoration: none; */
-    color: white
-}
-
-#about-christian-github {
- display: flex;
-    align-items: center;
-} 
-
+/* Team Links */
+#about-fabian-links,
+#about-chris-links,
 #about-christian-links {
-    border: 1px solid white;
-     height: 7vh;
-    width: 15vw;
+    border: 1.5px solid #479bfb;
+    height: 70px;
+    width: 140px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border-radius: 12px;
+    background: radial-gradient(circle, #0c3464, rgb(5, 5, 5)); 
+    box-shadow: 0 4px 20px rgba(71, 155, 251, 0.12), 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 10px;
+    padding: 14px;
+    backdrop-filter: blur(12px);
+}
+
+#about-fabian-links:hover,
+#about-chris-links:hover,
+#about-christian-links:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(71, 155, 251, 0.2), 0 2px 8px rgba(0, 0, 0, 0.12);
+    border-color: #94d3ff;
+}
+
+/* Social Media Links */
+#about-fabian-linkedin,
+#about-fabian-github,
+#about-chris-linkedin,
+#about-chris-github,
+#about-christian-linkedin,
+#about-christian-github {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+#about-fabian-linkedin:hover,
+#about-fabian-github:hover,
+#about-chris-linkedin:hover,
+#about-chris-github:hover,
+#about-christian-linkedin:hover,
+#about-christian-github:hover {
+    background: rgba(148, 163, 184, 0.1);
+}
+
+#about-fabian-linkedin img,
+#about-fabian-github img,
+#about-chris-linkedin img,
+#about-chris-github img,
+#about-christian-linkedin img,
+#about-christian-github img {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+#about-fabian-linkedin a,
+#about-fabian-github a,
+#about-chris-linkedin a,
+#about-chris-github a,
+#about-christian-linkedin a,
+#about-christian-github a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#about-fabian-linkedin a:hover,
+#about-fabian-github a:hover,
+#about-chris-linkedin a:hover,
+#about-chris-github a:hover,
+#about-christian-linkedin a:hover,
+#about-christian-github a:hover {
+    color: #94d3ff;
 }
