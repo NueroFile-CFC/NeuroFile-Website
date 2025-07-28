@@ -1,12 +1,25 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 const Contact = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [flipped, setFlipped] = useState(false)
 
+    useEffect(() => {
+    if (flipped) {
+      const delay = setTimeout(() => {
+        setFlipped(false);
+      }, 10000);
+      return () => clearTimeout(delay);
+    }
+  }, [flipped]);
+
     const postContact = async (e: { preventDefault: () => void }) => {
         e.preventDefault()
+        setFlipped(true)
+        setName('')
+        setEmail('')
+        setMessage('')
         try {
         const response = await fetch(`${import.meta.env.VITE_RENDER_URL}/api/contact`, {
             method: 'POST',
@@ -20,10 +33,6 @@ const Contact = () => {
         }
         const data = await response.json()
         console.log(data)
-         setFlipped(true)
-        setName('')
-        setEmail('')
-        setMessage('')
     }catch (error) {
         console.log(error)
     }
@@ -31,6 +40,7 @@ const Contact = () => {
     }
     return (
         <div id = 'contact-page'>
+            <div id = 'contact-title'><strong>Contact Us</strong></div>
             <div id = 'contact-box' className = {flipped ? 'flip' : ''}>
             <form id = 'contact-form' onSubmit = {postContact}>
                 <input type = 'text' id = 'contact-name' placeholder = 'Name...' value = {name} onChange = {(e) => setName(e.target.value)}/>
@@ -38,7 +48,8 @@ const Contact = () => {
                 <textarea id = 'contact-message' placeholder = 'Type your message...' value = {message} onChange = {(e) => setMessage(e.target.value)}/>
                 <button type = 'submit' id = 'contact-button'>Submit</button>
             </form>
-            <h1 id = 'contact-title'>Contact Us</h1>
+            <h6 id = 'contact-back'>Hi {name}, thanks for contacting us!
+We’ve received your message and someone from our team will get back to you shortly. We appreciate your interest and look forward to assisting you.</h6>
             </div>
         </div>
     )

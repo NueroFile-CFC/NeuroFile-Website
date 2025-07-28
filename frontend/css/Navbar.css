@@ -91,7 +91,7 @@ color: #1893D5;
         border: 1px solid transparent;
        padding: .75vh;
     border-radius: 1.75rem;
-    transition: all .5s;
+    transition: all 1s;
 }
 
 #navbar-links-left a:hover {
@@ -117,7 +117,7 @@ color: #1893D5;
       border: 1px solid transparent;
     border-radius: 1.75rem;
     padding: .75vh;
-     transition: all .5s;
+     transition: all 1s;
 }
 
 #logo {

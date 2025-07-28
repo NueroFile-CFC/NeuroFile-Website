@@ -23,6 +23,7 @@ font-family: 'Space Mono'
     color: #1893D4;  
     font-family: 'Space Mono';
     margin-top: 22vh;
+    margin-bottom: 1vh;
 }
 
 
@@ -74,10 +75,9 @@ border: 1px solid white;
 
 #home-demo {
     width: 60.2vw;
-    height: 33vw;
-
-    /* border: 1px solid #1893D4;
-    box-shadow: 0 0 10px #1893D4; */
+    height: 32vw;
+    border: 1px solid #1893D4;
+    box-shadow: 0 0 10px #1893D4;
 }
 
 #home-benefits {
@@ -99,7 +99,8 @@ border: 1px solid white;
     border-radius: 2vw;
     box-shadow: 0 0 10px #1893D4;
     font-family: 'Space Mono';
-   font-size: 1vw;
+   font-size: 1.5vw;
+   height: 15vw;
 }
 
 #home-install-box {

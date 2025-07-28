@@ -30,19 +30,19 @@ const About = () => {
             </div>
             <div id = 'about-team'>
             <div id = 'about-christian'>
-           <img src = '/person.png' id = 'about-christian-picture' />
+           <img src = '/christianPic.jpg' id = 'about-christian-picture' />
              <div className = 'about-back'>
                 <p>Strong: Javascript</p>
             </div>
             </div>
             <div id = 'about-fabian'>
-           <img src = '/person.png' id = 'about-fabian-picture' />
+           <img src = '/fabianPic.jpeg' id = 'about-fabian-picture' />
              <div className = 'about-back'>
                 <p>Strong: Javascript</p>
             </div>
             </div>
             <div id = 'about-chris'>
-            <img src = '/person.png' id = 'about-chris-picture' />
+            <img src = '/chrisPic.jpeg' id = 'about-chris-picture' />
             <div className = 'about-back'>
                 <p>Strong: Javascript</p>
             </div>

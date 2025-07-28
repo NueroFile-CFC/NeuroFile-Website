@@ -9,8 +9,8 @@
     #contact-box {
         width: 50vw;
         height: 35vw;
-        margin-top: 23vh;
         border-radius: 2vw;
+        margin-top: 1vh;
  transform-style: preserve-3d;
       transition: transform 1s;
       perspective: 1500px;
@@ -20,12 +20,19 @@
     box-shadow: 0 0 15px #1893D4;
     }
 
-    #contact-title{
+    #contact-title {
+        margin-top: 18vh;
+        font-size: 3.5vw;
+        color: #14ECFC;
+    }
+
+    #contact-back{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #14ECFC;
-        font-size: 3.5vw;
+        color: white;
+        font-size: 2vw;
+        padding: 3.5vw;
          width: 100%;
   height: 100%;
   position: absolute;
