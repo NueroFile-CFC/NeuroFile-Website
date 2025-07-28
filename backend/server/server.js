@@ -3,13 +3,18 @@ import mongoose from 'mongoose'
 import mongodb from 'mongodb'
 import nodemailer from 'nodemailer'
 import dotenv from 'dotenv'
+import cors from 'cors'
+
 import { postMessages, AIresponse } from '../controllers/userMessageController.js'
-const PORT = 3005
 const app = express()
 
-dotenv.config({path: '../.env'})
+dotenv.config()
+app.use(cors())
+app.use(express.json())
 
-mongoose.connect('mongodb://localhost:27017/neurofile')
+
+
+mongoose.connect(process.env.MONGO_URI)
 app.use(express.json())
 
 app.post('/api/messages', postMessages, AIresponse, (req, res) => {
@@ -50,6 +55,6 @@ app.use((err, req, res, next) => {
   res.status(errorObj.status).json(errorObj.message);
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log('listening on port 3005')
 })

@@ -3,11 +3,12 @@ const Contact = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [flipped, setFlipped] = useState(false)
 
     const postContact = async (e: { preventDefault: () => void }) => {
         e.preventDefault()
         try {
-        const response = await fetch('/api/contact', {
+        const response = await fetch(`${import.meta.env.VITE_RENDER_URL}/api/contact`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -19,7 +20,7 @@ const Contact = () => {
         }
         const data = await response.json()
         console.log(data)
-        alert(data.message)
+         setFlipped(true)
         setName('')
         setEmail('')
         setMessage('')
@@ -30,13 +31,15 @@ const Contact = () => {
     }
     return (
         <div id = 'contact-page'>
-            <h1 id = 'contact-title'>Contact Us</h1>
+            <div id = 'contact-box' className = {flipped ? 'flip' : ''}>
             <form id = 'contact-form' onSubmit = {postContact}>
                 <input type = 'text' id = 'contact-name' placeholder = 'Name...' value = {name} onChange = {(e) => setName(e.target.value)}/>
                 <input type = 'text' id = 'contact-email' placeholder = 'Email...' value = {email} onChange = {(e) => setEmail(e.target.value)}/>
                 <textarea id = 'contact-message' placeholder = 'Type your message...' value = {message} onChange = {(e) => setMessage(e.target.value)}/>
                 <button type = 'submit' id = 'contact-button'>Submit</button>
             </form>
+            <h1 id = 'contact-title'>Contact Us</h1>
+            </div>
         </div>
     )
 }

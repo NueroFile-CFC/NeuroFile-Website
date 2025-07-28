@@ -16,14 +16,16 @@ const Navbar = () => {
             </div>
             </div>
             <div id = 'navbar-links'>
-                <div id = 'navbar-links-top'>
+                <div id = 'navbar-links-left'>
             <Link to = '/'>Home</Link>
             <Link to = '/installation'>Installation</Link>
             {/* <Link to = '/playground'>Playground</Link> */}
             <Link to = '/support'>Support</Link>
             </div>
+            <div id = 'navbar-links-right'>
             <Link to = '/about'>About Us</Link>
             <Link to = '/contactus'>Contact Us</Link>
+            </div>
             </div>
         </div>
     )

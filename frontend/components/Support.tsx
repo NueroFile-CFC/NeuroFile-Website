@@ -4,12 +4,13 @@ const Support = () => {
     // const [airesponse, setAiResponse] = useState<string>('')
     const [message, setMessage] = useState<string>('')
 
+
     const postMessages = async (e: KeyboardEvent<HTMLTextAreaElement>) => {
         e.preventDefault()
         setUsersMessages(prev => [...prev, message])
         setMessage('')
             try {
-                const response = await fetch('/api/messages', {
+                const response = await fetch(`${import.meta.env.VITE_RENDER_URL}/api/messages`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -38,9 +39,10 @@ const Support = () => {
                          style = {{
                             alignSelf: index % 2 === 0 ? 'flex-end' : 'flex-start',
                             color: index % 2 === 0 ? '#1893D4' : '#FFFFFF',
-                            border: index % 2 === 0 ? '1px solid #1893D4' : '1px solid #FFFFFF'
+                            border: index % 2 === 0 ? '1px solid #1893D4' : '1px solid #FFFFFF',
+                            backgroundColor: 'black',
                         }}
-                         key = {index}>{index % 2 === 0 ? value : <div id = 'support-talk'><img id = 'support-image' src = '/Logo.png'/><h5>{value}</h5></div> }</h5>
+                         key = {index}>{index % 2 === 0 ? value : <div id = 'support-talk' style = {{alignItems: 'start'}}><img id = 'support-image' src = '/Logo.png'/><h5>{value}</h5></div> }</h5>
                     ))}
                     {/* {user.map((text, index) => (
                         <div id = 'support-user-messages' key = {index} style = {{ 

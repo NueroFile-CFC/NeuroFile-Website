@@ -2,7 +2,7 @@ import Messages from '../models/userMessagesModel.js'
 import OpenAI from 'openai'
 import dotenv from 'dotenv'
 
-dotenv.config({path: '../.env'})
+dotenv.config()
 
 const ai = new OpenAI({apiKey: process.env.OPENAI_API_KEY})
 export const postMessages = async (req, res, next) => {
@@ -27,7 +27,7 @@ export const AIresponse = async (req, res, next) => {
             model: 'gpt-4o',
             messages: [{
                 role: 'assistant',
-                content: `You are an assistant for our vscode extension called NeuroFile. It is a vscode extension that allows users to get a summary of a file or function on a codebase. Give a response to this users question "${userMessage}`
+                content: `You are an assistant for our vscode extension called NeuroFile. It is a vscode extension that allows users to get a summary of a file, function, folder, or entire codebase. It also generates psuedocode and time complexity for selected code. Give a response to this users question "${userMessage}`
             }]
         })
         console.log(response.choices[0].message)
