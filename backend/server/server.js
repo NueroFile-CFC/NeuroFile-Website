@@ -9,7 +9,11 @@ import { postMessages, AIresponse } from '../controllers/userMessageController.j
 const app = express()
 
 dotenv.config()
-app.use(cors())
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://www.neurofile.org'],
+  methods: ['GET', 'POST', 'OPTIONS'],
+  credentials: true
+}))
 app.use(express.json())
 
 
