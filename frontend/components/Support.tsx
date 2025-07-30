@@ -1,13 +1,18 @@
-import { useState, type KeyboardEvent } from "react"
+import { useState, useEffect, useRef, type KeyboardEvent } from "react"
 const Support = () => {
     const [usersMessages, setUsersMessages] = useState<string[]>([])
     // const [airesponse, setAiResponse] = useState<string>('')
     const [message, setMessage] = useState<string>('')
+    const ref = useRef<HTMLDivElement | null>(null);
 
+
+useEffect(() => {
+  ref.current?.scrollIntoView({ behavior: "smooth" });
+}, [usersMessages]);
 
     const postMessages = async (e: KeyboardEvent<HTMLTextAreaElement>) => {
         e.preventDefault()
-        setUsersMessages(prev => [...prev, message, 'loading...'])
+        setUsersMessages(prev => [...prev, message, 'Processing...'])
         setMessage('')
             try {
                 const response = await fetch(`${import.meta.env.VITE_RENDER_URL}/api/messages`, {
@@ -40,14 +45,9 @@ const Support = () => {
             <div id = 'support-chatroom'>
                 <div id = 'support-user'>
                     {usersMessages.map((value, index) => {
-                        if(index % 2 === 0) {
-                            setTimeout(() => {
-                               return value
-                            }, 1000)
-                        }
-                        const loading = value === 'loading...';
+                        const loading = value === 'Processing...';
                         return (
-                        <div id = 'support-user-message'
+                        <div ref = {ref} id = 'support-user-message'
                          style = {{
                             alignSelf: index % 2 === 0 ? 'flex-end' : 'flex-start',
                             color: index % 2 === 0 ? '#1893D4' : '#FFFFFF',
@@ -57,10 +57,10 @@ const Support = () => {
                             fontSize: '1vw'
                         }}
                          key = {index}>{index % 2 === 0 ? value : <div className = 'support-talk' style = {{
-                             color: loading ? '#14ECFC' : 'white',
-                            animation: loading ? 'spin 1s ease-in-out forwards infinite': 'none',
+                             color: 'white',
+                            animation: loading ? 'spin 2s ease-in-out forwards infinite': 'none',
                              alignItems: 'start',
-                            fontSize: '1vw'
+                            fontSize: loading ? '1.5vw' : '1vw'
                             }}>{loading ? '': <img id = 'support-image' src = '/Logo.png'/>}<h5>{value}</h5></div>}</div>
                     )
 })}
