@@ -4,6 +4,7 @@
     align-items: center;
     color: white;
     font-family: 'Space Mono';
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 #support-title {
@@ -55,7 +56,7 @@ width: 3vw;
 height: 3vw;
 }
 
-#support-talk {
+.support-talk {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,7 +70,7 @@ height: 3vw;
             border: 1px solid white;
             background-color: transparent;
             border-radius: 10px;
-            padding: 1vh;
+            padding: .5vw;
             color: #1893D4;
 }
 
@@ -101,12 +102,24 @@ height: 3vw;
     border: 1px solid white;
     background-color: white;
     border-radius: 10px;
-    padding: 5px
+    padding: 5px;
 }
 
 #support-text::placeholder {
      color: #1893D4;
      font-family: 'Space Mono';
+}
+
+@keyframes spin {
+    0% {
+
+    }
+    50% {
+        scale: .5
+    }
+    100% {
+        transform: rotateX(360deg)
+    }
 }
 
 @media screen and (max-width: 449px) {

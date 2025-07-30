@@ -1,3 +1,8 @@
+#installation-page {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
 #installation-title {
     display: flex;
     justify-content: center;
@@ -63,6 +68,22 @@ align-items: center;
     width: 30vw;
     height: 20vw;
     border-radius: 2vw;
+}
+
+/* 
+slide-in
+
+*/
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -131,3 +152,70 @@ align-items: center;
     height: 40vw;
 }
 }
+
+/* #installation-title {
+    display: flex;
+    justify-content: center;
+    color :#14ECFC;
+    margin-top: 19vh;
+    font-size: 3vw;
+}
+
+#installation-steps {
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 15vh;
+    padding-top: 5vh; 
+    color: white;
+    margin-left: 15vw;
+      margin-right: 15vw;
+}
+
+#installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background: radial-gradient(circle, #0c305b, rgb(0, 0, 0)); 
+   border-radius: 2vw;
+   width: 30vw;
+   height: 25vw;
+   border: 1px solid #1893D4;
+box-shadow: 0 0 10px #1893D4;
+}
+
+#installation-first-step-titles p, #installation-second-step-titles p, #installation-third-step-titles p, #installation-fourth-step-titles p, #installation-fifth-step-titles p, #installation-sixth-step-titles p {
+   padding: 1vw 3vw;
+   border-radius: 2vw;
+   width: 30vw;
+   font-size: 1.15vw
+}
+
+#installation-first-step-titles a {
+    color: #14ECFC;
+    font-size: 1.15vw
+}
+
+#installation-first-step-titles h4, #installation-second-step-titles h4, #installation-third-step-titles h4, #installation-fourth-step-titles h4, #installation-fifth-step-titles h4, #installation-sixth-step-titles h4 {
+ color:#14ECFC;
+ font-size: 1.5vw
+}
+
+
+
+#installation-first-step, #installation-second-step, #installation-third-step, #installation-fourth-step, #installation-fifth-step, #installation-sixth-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0vh;
+    color: white;
+}
+
+#installation-first-step-pic, #installation-second-step-pic, #installation-third-step-pic, #installation-fourth-step-pic, #installation-fifth-step-pic, #installation-sixth-step-pic {
+display: flex;
+justify-content: center;
+align-items: center;
+    width: 30vw;
+    height: 20vw;
+    border-radius: 2vw;
+} */

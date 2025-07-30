@@ -7,7 +7,7 @@ const Support = () => {
 
     const postMessages = async (e: KeyboardEvent<HTMLTextAreaElement>) => {
         e.preventDefault()
-        setUsersMessages(prev => [...prev, message])
+        setUsersMessages(prev => [...prev, message, 'loading...'])
         setMessage('')
             try {
                 const response = await fetch(`${import.meta.env.VITE_RENDER_URL}/api/messages`, {
@@ -22,7 +22,12 @@ const Support = () => {
                 }
                 const data = await response.json()
                 console.log(data)
-                setUsersMessages(prev => [...prev, data])
+                  setUsersMessages(prev => {
+      const updated = [...prev];
+      updated[updated.length - 1] = data;
+      return updated;
+    });
+
             } catch(error) {
                 console.log(error)
             }
@@ -34,16 +39,31 @@ const Support = () => {
             <h1 id = 'support-title'>How can we help you ?</h1>
             <div id = 'support-chatroom'>
                 <div id = 'support-user'>
-                    {usersMessages.map((value, index) => (
-                        <h5 id = 'support-user-message'
+                    {usersMessages.map((value, index) => {
+                        if(index % 2 === 0) {
+                            setTimeout(() => {
+                               return value
+                            }, 1000)
+                        }
+                        const loading = value === 'loading...';
+                        return (
+                        <div id = 'support-user-message'
                          style = {{
                             alignSelf: index % 2 === 0 ? 'flex-end' : 'flex-start',
                             color: index % 2 === 0 ? '#1893D4' : '#FFFFFF',
                             border: index % 2 === 0 ? '1px solid #1893D4' : '1px solid #FFFFFF',
                             backgroundColor: 'black',
+                            animation: index % 2 === 0 ? 'fadeInUp 0s ease-in-out' : 'fadeInUp 1s ease-in-out 0s',
+                            fontSize: '1vw'
                         }}
-                         key = {index}>{index % 2 === 0 ? value : <div id = 'support-talk' style = {{alignItems: 'start'}}><img id = 'support-image' src = '/Logo.png'/><h5>{value}</h5></div> }</h5>
-                    ))}
+                         key = {index}>{index % 2 === 0 ? value : <div className = 'support-talk' style = {{
+                             color: loading ? '#14ECFC' : 'white',
+                            animation: loading ? 'spin 1s ease-in-out forwards infinite': 'none',
+                             alignItems: 'start',
+                            fontSize: '1vw'
+                            }}>{loading ? '': <img id = 'support-image' src = '/Logo.png'/>}<h5>{value}</h5></div>}</div>
+                    )
+})}
                     {/* {user.map((text, index) => (
                         <div id = 'support-user-messages' key = {index} style = {{ 
                             justifyContent: index % 2 === 1 ? 'flex-start' : 'flex-end',
