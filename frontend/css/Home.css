@@ -33,7 +33,7 @@ animation: fadeInUp 1s ease-out forwards;
     box-shadow: 0 0 10px #1893D4;
      background-color: black;
     border-radius: 1rem;
-    font-size: 1.25vw;
+    font-size: 1vw;
     color: white;
      font-family: 'Space Mono';
      width: 8.6vw;
@@ -42,7 +42,7 @@ animation: fadeInUp 1s ease-out forwards;
 #home-left-arrow{
     display: flex;
  width: 3vw;
-    height: 3vw;
+    height: 2.5vw;
 background-color: black;
 border: 1px solid white;
 box-shadow: 0 0 10px #1893D4;
@@ -50,7 +50,7 @@ box-shadow: 0 0 10px #1893D4;
 
 #home-left-arrow-button {
  width: 3vw;
-    height: 3vw;
+  height: 2.5vw;
 padding: 0;
 background-color: black;
 border: 1px solid white;
@@ -58,7 +58,7 @@ border: 1px solid white;
 
 #home-right-arrow-button {
  width: 3vw;
-    height: 3vw;
+    height: 2.5vw;
     padding: 0;
 background-color: black;
 border: 1px solid white;
@@ -68,7 +68,7 @@ box-shadow: 0 0 10px #1893D4;
 #home-right-arrow {
     display:flex;
   width: 3vw;
-    height: 3vw;
+    height: 2.5vw;
 padding: 0;
 background-color: black;
 border: 1px solid white;
@@ -100,7 +100,7 @@ border: 1px solid white;
     border-radius: 2vw;
     box-shadow: 0 0 10px #1893D4;
     font-family: 'Space Mono';
-   font-size: 1.5vw;
+   font-size: 1.25vw;
    height: 15vw;
 }
 
@@ -120,7 +120,7 @@ border: 1px solid white;
     align-items: center;
     height: 5vw;
      font-size: 2vw;
-     color: white;
+     color:#14ECFC;
 }
 
 #home-install button {

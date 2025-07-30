@@ -28,7 +28,7 @@
 
 #navbar-title {
     display: flex;
-    font-size: 2vh;
+    font-size: 2.25vh;
 }
 
 #navbar-slogan {
@@ -40,7 +40,7 @@
 #navbar-slogan-halves {
     display: flex;
     flex-direction: row;
-    font-size: 1.25vh;
+    font-size: 1.5vh;
 }
 
 #navbar-title-build {
@@ -70,7 +70,7 @@ color: #1893D5;
     word-wrap:break-word;
     justify-content: center;
     gap: 3vw;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
     font-size: 1.75vh;
 }
 
@@ -122,8 +122,8 @@ color: #1893D5;
 
 #logo {
     margin-top: 1vh;
-    width: 9vh;
-    height: 8vh;
+    width: 10vh;
+    height: 8.5vh;
 }
  
  @media screen and (max-width: 449px ) {

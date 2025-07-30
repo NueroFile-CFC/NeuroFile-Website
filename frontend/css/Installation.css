@@ -13,7 +13,7 @@
 
 #installation-steps {
      display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
     gap: 15vh;
     padding-top: 5vh; 
     color: white;
@@ -21,7 +21,7 @@
       margin-right: 15vw;
 }
 
-#installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles {
+#installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles, #installation-seventh-step-titles {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,26 +34,26 @@
 box-shadow: 0 0 10px #1893D4;
 }
 
-#installation-first-step-titles p, #installation-second-step-titles p, #installation-third-step-titles p, #installation-fourth-step-titles p, #installation-fifth-step-titles p, #installation-sixth-step-titles p {
+#installation-first-step-titles p, #installation-second-step-titles p, #installation-third-step-titles p, #installation-fourth-step-titles p, #installation-fifth-step-titles p, #installation-sixth-step-titles p, #installation-seventh-step-titles p {
    padding: 1vw 3vw;
    border-radius: 2vw;
    width: 30vw;
    font-size: 1.15vw
 }
 
-#installation-first-step-titles a {
+#installation-first-step-titles a, #installation-sixth-step-titles a {
     color: #14ECFC;
     font-size: 1.15vw
 }
 
-#installation-first-step-titles h4, #installation-second-step-titles h4, #installation-third-step-titles h4, #installation-fourth-step-titles h4, #installation-fifth-step-titles h4, #installation-sixth-step-titles h4 {
+#installation-first-step-titles h4, #installation-second-step-titles h4, #installation-third-step-titles h4, #installation-fourth-step-titles h4, #installation-fifth-step-titles h4, #installation-sixth-step-titles h4, #installation-seventh-step-titles h4 {
  color:#14ECFC;
  font-size: 1.5vw
 }
 
 
 
-#installation-first-step, #installation-second-step, #installation-third-step, #installation-fourth-step, #installation-fifth-step, #installation-sixth-step {
+#installation-first-step, #installation-second-step, #installation-third-step, #installation-fourth-step, #installation-fifth-step, #installation-sixth-step, #installation-seventh-step {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,13 +61,25 @@ box-shadow: 0 0 10px #1893D4;
     color: white;
 }
 
-#installation-first-step-pic, #installation-second-step-pic, #installation-third-step-pic, #installation-fourth-step-pic, #installation-fifth-step-pic, #installation-sixth-step-pic {
+#installation-first-step-pic, #installation-second-step-pic, #installation-third-step-pic, #installation-fourth-step-pic, #installation-fifth-step-pic, #installation-sixth-step-pic, #installation-seventh-step-pic {
 display: flex;
 justify-content: center;
 align-items: center;
     width: 30vw;
     height: 20vw;
     border-radius: 2vw;
+    margin-top: 2vh;
+       border: 1px solid #1893D4;
+box-shadow: 0 0 10px #1893D4;
+}
+
+#installation-first-step-pic:hover, #installation-second-step-pic:hover, #installation-third-step-pic:hover, #installation-fourth-step-pic:hover, #installation-fifth-step-pic:hover, #installation-sixth-step-pic:hover, #installation-seventh-step-pic:hover {
+scale: 1.5;
+}
+
+#installation-seventh-step {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
 }
 
 /* 

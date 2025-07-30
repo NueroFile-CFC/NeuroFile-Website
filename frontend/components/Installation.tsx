@@ -38,14 +38,23 @@ const Installation = () => {
                 </div>
                 <img src = '/VSCodeExtensionReload.png' id = 'installation-fifth-step-pic' />
                 </div>
-                    <div id = 'installation-sixth-step'>
+                 <div id = 'installation-sixth-step'>
                    <div id = 'installation-sixth-step-titles'>
-                <h4>6. Start Using NeuroFile</h4>
-                <p>Once reloaded, the NeuroFile extension is ready to use. You can now access its features by right-clicking in the editor. If you encounter any issues during installation, ensure that you have the latest version of Visual Studio Code installed.</p>
+                <h4>6. Add Your OpenAI API Key</h4>
+<p>
+To use NeuroFile, you'll need to add your own OpenAI API key. Open the Command Palette by pressing Ctrl+Shift+P(Windows/Linux) or Cmd+Shift+P (macOS), or click the View tab in the top menu and select Command Palette. Then, type in "NeuroFile" and select the option to enter your API key. If you don’t already have an OpenAI API key, you can create an account and generate a key <a href="https://platform.openai.com/docs/overview" target="_blank">here</a>.
+</p>
                 </div>
-                <img src = '/VSCodeExtensionFinal.png' id = 'installation-sixth-step-pic' />
+                <img src = '/VSCodeExtensionApi.png' id = 'installation-sixth-step-pic' />
                 </div>
             </div>
+            <div id = 'installation-seventh-step'>
+                   <div id = 'installation-seventh-step-titles'>
+                <h4>7. Start Using NeuroFile</h4>
+                <p>NeuroFile extension is ready to use. You can now access its features by right-clicking in the editor. If you encounter any issues during installation, ensure that you have the latest version of Visual Studio Code installed and restart.</p>
+                </div>
+                <img src = '/VSCodeExtensionFinal.png' id = 'installation-seventh-step-pic' />
+                </div>
         </div>
     )
 }

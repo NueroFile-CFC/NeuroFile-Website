@@ -128,10 +128,49 @@ margin-top: -10px
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  text-align: center;
-  font-size: 1.2vw;
+  font-size: 2vw;
+  color: #14ECFC;
+}
+
+
+#about-fabian .about-back h6,
+#about-chris .about-back h6,
+#about-christian .about-back h6 {
+    display: flex;
+     font-size: 1.5vw;
+  color: #14ECFC;
+  margin-top: 1vw;
+  text-decoration: underline;
+}
+
+#about-fabian .about-back li,
+#about-chris .about-back li,
+#about-christian .about-back li {
+    font-size: 1vw;
+    color: white;
+}
+
+.about-list-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5vw;
+}
+
+.about-list-left {
+    display: flex;
+    flex-direction: column;
+    margin-left: -4vw;
+    width: 3vw;
+}
+
+.about-list-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    width: 3vw;
 }
 
 #about-fabian:hover #about-fabian-picture,

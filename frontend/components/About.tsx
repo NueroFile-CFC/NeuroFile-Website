@@ -32,19 +32,72 @@ const About = () => {
             <div id = 'about-christian'>
            <img src = '/christianPic.jpg' id = 'about-christian-picture' />
              <div className = 'about-back'>
-                <p>Strong: Javascript</p>
+                <h6>Strong</h6>
+                <ul className = 'about-list-box'>
+                <div className = 'about-list-left'>
+                <li>JavaScript</li><li>React</li><li>TypeScript</li><li>Vite</li><li>Node.js</li><li>Express.js</li><li>SQL</li>
+                </div>
+                <div className = 'about-list-right'>
+                    <li>MongoDB</li><li>Git</li><li>GitHub</li><li>HTML</li><li>CSS</li><li>AJAX</li>
+                 </div>
+                 </ul>
+                <h6>Experienced</h6>
+                <ul className = 'about-list-box'>
+                <div className = 'about-list-left'>
+                <li>AI/ML</li><li>Webpack</li><li>Redux</li>
+                </div>
+                <div className = 'about-list-right'>
+                    <li>VectorDB</li><li>PostgreSQL</li><li>Testing</li>
+                </div>
+                </ul>
             </div>
             </div>
             <div id = 'about-fabian'>
            <img src = '/fabianPic.jpeg' id = 'about-fabian-picture' />
              <div className = 'about-back'>
-                <p>Strong: Javascript</p>
+                 <h6>Strong</h6>
+                <ul className = 'about-list-box'>
+                <div className = 'about-list-left'>
+                <li>JavaScript</li><li>React</li><li>Vite</li><li>Node.js</li><li>Express.js</li><li>SQL</li><li>PostgreSQL</li><li>TypeScript</li>
+                </div>
+                <div className = 'about-list-right'>
+                    <li>MongoDB</li><li>VectorDB</li><li>Git</li><li>GitHub</li><li>HTML</li><li>CSS</li><li>AJAX</li>
+                 </div>
+                 </ul>
+                <h6>Experienced</h6>
+                <ul className = 'about-list-box'>
+                <div className = 'about-list-left'>
+                <li>Redux</li><li>Webpack</li>
+                </div>
+                <div className = 'about-list-right'>
+                <li>Testing</li>
+                </div>
+                </ul>
             </div>
             </div>
             <div id = 'about-chris'>
             <img src = '/chrisPic.jpeg' id = 'about-chris-picture' />
             <div className = 'about-back'>
-                <p>Strong: Javascript</p>
+                {/* <p>Strong: Javascript, Node.js, Express, MongoDB, AI/ML, CSS, HTML, Git, Github, AJAX, Vite, </p>
+                <p>Experienced: React, SQL, PostgreSQL, Redux, TypeScript, Webpack, VectorDB, Testing</p> */}
+                           <h6>Strong</h6>
+                <ul className = 'about-list-box'>
+                <div className = 'about-list-left'>
+                <li>Javascript</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>AI/ML</li><li>CSS</li>
+                </div>
+                <div className = 'about-list-right'>
+                    <li>HTML</li><li>Git</li><li>GitHub</li><li>AJAX</li><li>Vite</li>
+                 </div>
+                 </ul>
+                <h6>Experienced</h6>
+                <ul className = 'about-list-box'>
+                <div className = 'about-list-left'>
+                <li>React</li><li>SQL</li><li>PostgreSQL</li><li>Redux</li>
+                </div>
+                <div className = 'about-list-right'>
+                    <li>TypeScript</li><li>Webpack</li><li>VectorDB</li><li>Testing</li>
+                </div>
+                </ul>
             </div>
             </div>
          </div>
