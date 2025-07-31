@@ -61,7 +61,7 @@ const About = () => {
                 <li>JavaScript</li><li>React</li><li>Vite</li><li>Node.js</li><li>Express.js</li><li>SQL</li><li>PostgreSQL</li><li>TypeScript</li>
                 </div>
                 <div className = 'about-list-right'>
-                    <li>MongoDB</li><li>VectorDB</li><li>Git</li><li>GitHub</li><li>HTML</li><li>CSS</li><li>AJAX</li>
+                    <li>MongoDB</li><li>VectorDB</li><li>Git</li><li>GitHub</li><li>HTML</li><li>CSS</li><li>AJAX</li><li>AI/ML</li>
                  </div>
                  </ul>
                 <h6>Experienced</h6>
