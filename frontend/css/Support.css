@@ -62,6 +62,7 @@ height: 3vw;
     align-items: center;
     justify-content: center;
     font-family: 'Space Mono';
+    font-size: '1vw'
 }
 
 #support-user-message {
@@ -72,6 +73,7 @@ height: 3vw;
             border-radius: 10px;
             padding: .5vw;
             color: #1893D4;
+            font-size: '1vw';
 }
 
 /* #support-user-messages {
@@ -126,13 +128,18 @@ height: 3vw;
     
     #support-title {
     background-color: transparent;
-    font-size: 2.5vh;
+    font-size: 6vw;
     margin-top: 14vh;
     font-family: 'Space Mono';
 }
 #support-chatroom {
     height: 60vh;
     width: 75vw;
+}
+#support-user-message {
+    font-size: 3vw;
+    width: 35vw;
+    padding: 2vw;
 }
 
 #support-text {
@@ -142,6 +149,7 @@ height: 3vw;
     padding-left: 2vw;
     padding-top: .8vh;
 }
+
 }
 
 /*@media screen and (min-width: 450px) and (max-width: 1199px) {

@@ -54,13 +54,11 @@ useEffect(() => {
                             border: index % 2 === 0 ? '1px solid #1893D4' : '1px solid #FFFFFF',
                             backgroundColor: 'black',
                             animation: index % 2 === 0 ? 'fadeInUp 0s ease-in-out' : 'fadeInUp 1s ease-in-out 0s',
-                            fontSize: '1vw'
                         }}
                          key = {index}>{index % 2 === 0 ? value : <div className = 'support-talk' style = {{
                              color: 'white',
                             animation: loading ? 'spin 2s ease-in-out forwards infinite': 'none',
                              alignItems: 'start',
-                            fontSize: loading ? '1.5vw' : '1vw',
                             fontWeight: 'none'
                             }}>{loading ? '': <img id = 'support-image' src = '/Logo.png'/>}<h5>{value}</h5></div>}</div>
                     )

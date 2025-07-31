@@ -159,42 +159,164 @@ margin-top: -2vh;
 
  @media screen and (max-width: 449px) {
 #contact-page {
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono';
+    animation: fadeInUp 1s ease-out forwards;
+    }
+
+    #contact-box {
+        width: 60vw;
+        height: 80vw;
+        border-radius: 2vw;
+        margin: 0;
+ transform-style: preserve-3d;
+      transition: transform 1s;
+      perspective: 1500px;
+      position: relative;
+    background: radial-gradient(circle, #012c5c, black);
+      border: 1px solid #1893D4;
+    box-shadow: 0 0 15px #1893D4;
     }
 
     #contact-title {
-        margin-top: 13vh;
-        font-size: 6vw;
+        padding-top: 13vh;
+        margin: 0;
+        font-size: 7vw;
+        color: #14ECFC;
+        padding-bottom: 2vh;
     }
 
-#contact-form {
-    margin-top: 1vh;
-    width: 70vw;
-    height: 45vh;
-    gap: 3vh;
+    #contact-back{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3.25vw;
+        padding: 3.5vw;
+         width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 2vw;
+  transition: transform 1s;
+transform: rotateY(180deg);
+backface-visibility: hidden;
+margin-top: 0vh;
+    }
+
+
+#contact-form{
+    width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #012c5c, black);
+  color: white;
+  gap: 4vh;
+  border-radius: 2vw;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition: transform 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #contact-name {
-    width: 50vw;
-    height: 3vh;
-    font-size: 1.5vh;
+    width: 40vw;
+    height: 4vw;
+    border: 1px solid rgb(150, 167, 235);
+    border-radius: 1vw;
+    transition: all 1s;
+    outline: none;
+    padding-left: .8vw;
+     border: 1px solid #1893D4;
+    box-shadow: 0 0 10px #1893D4;
+    font-size: 2.5vw;
 }
 
 #contact-email {
-    width: 50vw;
-    height: 3vh;
-     font-size: 1.5vh;
+    width: 40vw;
+     height: 4vw;
+    border: 1px solid black;
+    border-radius: 1vw;
+    transition: all 1s;
+    outline: none;
+    padding-left: .8vw;
+     border: 1px solid #1893D4;
+    box-shadow: 0 0 10px #1893D4;
+      font-size: 2.5vw;
 }
 
 #contact-message {
-    width: 50vw;
-    height: 20vh;
-    margin-bottom: 1vh;
-     font-size: 1.25vh;
+    width: 40vw;
+    height: 25vw;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 1vw;
+    transition: all 1s;
+    outline: none;
+    padding-left: .8vw;
+     border: 1px solid #1893D4;
+    box-shadow: 0 0 10px #1893D4;
+    font-size: 2.5vw;
+}
+
+    #contact-box.flip {
+        transform: rotateY(180deg);
+    }
+
+
+#contact-name:focus,
+#contact-email:focus,
+#contact-message:focus{
+    border-color: #479bfb;
+    background-color: #1893D4;
+    font-family: 'Space Mono';
+}
+
+#contact-name::placeholder,
+#contact-email::placeholder,
+#contact-message::placeholder{
+   color: black;
+   font-weight: 400;
+   font-family: 'Space Mono';
 }
 
 #contact-button {
-    font-size: 3.5vw
+    margin-top: -1vh;
+     background-color: white; 
+    font-weight: lighter;
+    border: none;
+    color: #479bfb;
+    border-radius: 10px;
+    padding: .5vw 1vw;
+    letter-spacing: .5px;
+    font-size: 2.5vw;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid #1893D4;
+    font-family: 'Space Mono';
+}
+
+#contact-button:hover {
+    background: #479bfb;
+    transform: translateY(0.1vw);
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+
+#contact-button:active {
+    transform: translateY(-0.2vw);
+    box-shadow: #9bcaff;
 }
 }
 

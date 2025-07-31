@@ -274,6 +274,56 @@ margin-top: -10px
  gap: 5vw;
  color: white;
 }
+#about-all-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5vw;
+    margin-top: 1vh;
+}
+
+#about-fabian-picture, #about-christian-picture, #about-chris-picture {
+    border-radius: 1vw;
+     border: 1px solid #1893D4;
+     box-shadow: 0 0 10px #1893D4;
+      width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2vw;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s;
+  margin: 0;
+}
+
+#about-fabian, #about-christian, #about-chris {
+  width: 21vw;
+  height: 25vw;
+    transition: transform .8s;
+  transform-style: preserve-3d;
+  padding-top: 2vh;
+  margin: 0;
+   perspective: 1000px;
+   padding-right: -.5vw;
+}
+
+#about-names {
+    color: #14ECFC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7.5vw;
+    font-size: 2.55vw;
+    padding-top: 7vh;
+    padding-bottom: 0vw;
+    margin:0;
+   padding-left: 16.5vw;
+}
+
+
 
 #about-problem {
     display: flex;
@@ -308,7 +358,7 @@ margin-top: -10px
     justify-content: center;
     align-items: center;
     color: #14ECFC;
-    font-size: 6vw;
+    font-size: 7vw;
     padding-top: 14vh;
       margin-top: 0;
 }
@@ -318,14 +368,14 @@ margin-top: -10px
 color:#14ECFC;
 margin-bottom: 2vh;
 margin-top: -2vh;
-font-size: 2vw;
+font-size: 3vw;
 }
 
 #about-solution-title {
     color:#14ECFC;
 margin-bottom: 2vh;
 margin-top: -2vh;
-font-size: 2vw;
+font-size: 3vw;
 }
 
 #about-team {
@@ -333,7 +383,7 @@ font-size: 2vw;
     flex-direction: row;
     align-items: center;
     gap: 4vw;
-    padding-top: 15vw;
+    padding-top: 1vw;
     margin-top: 0vw;
     color: white;
     
@@ -358,6 +408,7 @@ height: 25vw;
 width: 20vw;
 height: 5vh;
 font-size: 1.75vw;
+
 }
 
 #about-fabian, #about-chris, #about-christian {
