@@ -60,7 +60,8 @@ useEffect(() => {
                              color: 'white',
                             animation: loading ? 'spin 2s ease-in-out forwards infinite': 'none',
                              alignItems: 'start',
-                            fontSize: loading ? '1.5vw' : '1vw'
+                            fontSize: loading ? '1.5vw' : '1vw',
+                            fontWeight: 'none'
                             }}>{loading ? '': <img id = 'support-image' src = '/Logo.png'/>}<h5>{value}</h5></div>}</div>
                     )
 })}
