@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 const Navbar = () => {
+    const [burgerIcon, setBurgerIcon] = useState(false)
 
     return (
         <div id = 'navbar'>
@@ -15,17 +17,13 @@ const Navbar = () => {
             </div>
             </div>
             </div>
-            <div id = 'navbar-links'>
-                <div id = 'navbar-links-left'>
-            <Link to = '/'>Home</Link>
-            <Link to = '/installation'>Installation</Link>
-            {/* <Link to = '/playground'>Playground</Link> */}
-            <Link to = '/support'>Support</Link>
-            </div>
-            <div id = 'navbar-links-right'>
-            <Link to = '/about'>About Us</Link>
-            <Link to = '/contactus'>Contact Us</Link>
-            </div>
+            <button id = 'navbar-toggle' onClick = {() => {setBurgerIcon(prev => !prev)}}>☰</button>
+            <div id = {`navbar-links-${burgerIcon ? 'burger' : 'off'}`}>
+            <Link to = '/' onClick = {() => {setBurgerIcon(prev => !prev)}}>Home</Link>
+            <Link to = '/installation' onClick = {() => {setBurgerIcon(prev => !prev)}}>Installation</Link>
+            <Link to = '/support' onClick = {() => {setBurgerIcon(prev => !prev)}}>Support</Link>
+            <Link to = '/about' onClick = {() => {setBurgerIcon(prev => !prev)}}>About Us</Link>
+            <Link to = '/contactus' onClick = {() => {setBurgerIcon(prev => !prev)}}>Contact Us</Link>
             </div>
         </div>
     )

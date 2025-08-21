@@ -18,13 +18,13 @@ animation: fadeInUp 1s ease-out forwards;
 
 #home-video-title {
     display: flex;
-     gap: 0.35vw;
+     gap: 0.36vw;
     align-items: center;
     justify-content: center;
     color: #1893D4;  
     font-family: 'Space Mono';
-    margin-top: 22vh;
-    margin-bottom: 1vh;
+    margin-top: 11rem;
+    margin-bottom: .5rem;
 }
 
 
