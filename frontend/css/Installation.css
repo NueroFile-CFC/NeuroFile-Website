@@ -2,20 +2,20 @@
     animation: fadeInUp 1s ease-out forwards;
 }
 
-
 #installation-title {
     display: flex;
     justify-content: center;
     color :#14ECFC;
-    margin-top: 8.5rem;
+    margin-top: 9rem;
     font-size: 2.75rem;
 }
 
 #installation-steps {
-    padding-top: 2rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3rem;
     color: white;
-    gap: 5rem;
-
 }
 
 #installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles, #installation-seventh-step-titles {
@@ -30,31 +30,33 @@
 box-shadow: 0 0 10px #1893D4;
 }
 
+#installation-first-step-titles:hover, #installation-second-step-titles:hover, #installation-third-step-titles:hover, #installation-fourth-step-titles:hover, #installation-fifth-step-titles:hover, #installation-sixth-step-titles:hover, #installation-seventh-step-titles:hover {
+scale: 1.1;
+}
+
 #installation-first-step-titles p, #installation-second-step-titles p, #installation-third-step-titles p, #installation-fourth-step-titles p, #installation-fifth-step-titles p, #installation-sixth-step-titles p, #installation-seventh-step-titles p {
-   padding: 1vw 3vw;
+   padding: 1rem 3rem;
    border-radius: 1rem;
    width: 25rem;
-   font-size: 1.15vw
+   font-size: .9rem
 }
 
 #installation-first-step-titles a, #installation-sixth-step-titles a {
     color: #14ECFC;
-    font-size: 1.15vw
+    font-size: .9rem;
 }
 
 #installation-first-step-titles h4, #installation-second-step-titles h4, #installation-third-step-titles h4, #installation-fourth-step-titles h4, #installation-fifth-step-titles h4, #installation-sixth-step-titles h4, #installation-seventh-step-titles h4 {
  color:#14ECFC;
- font-size: 1.5vw
+ font-size: 1.25rem;
 }
-
-
 
 #installation-first-step, #installation-second-step, #installation-third-step, #installation-fourth-step, #installation-fifth-step, #installation-sixth-step, #installation-seventh-step {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 0vh;
+    gap: 2rem;
     color: white;
 }
 
@@ -65,24 +67,19 @@ justify-content: center;
 align-items: center;
     width: 32rem;
     height: 22rem;
-    border-radius: 2vw;
+    border-radius: 1rem;
        border: 1px solid #1893D4;
 box-shadow: 0 0 10px #1893D4;
 }
 
 #installation-first-step-pic:hover, #installation-second-step-pic:hover, #installation-third-step-pic:hover, #installation-fourth-step-pic:hover, #installation-fifth-step-pic:hover, #installation-sixth-step-pic:hover, #installation-seventh-step-pic:hover {
-scale: 1.5;
+scale: 1.1;
 }
 
 #installation-seventh-step {
-    margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
-
-/* 
-slide-in
-
-*/
 
 @keyframes fadeInUp {
   0% {
@@ -95,137 +92,97 @@ slide-in
   }
 }
 
-@media screen and (max-width: 450px) {
-    #installation-title {
-    display: flex;
-    justify-content: center;
-    color :#14ECFC;
-    padding-top: 14vh;
-    margin: 0;
-    font-size: 7vw;
+@media screen and (max-width: 700px){
+#installation-title {
+    font-size: 6.25vw;
+}
+
+#installation-first-step-titles:hover, #installation-second-step-titles:hover, #installation-third-step-titles:hover, #installation-fourth-step-titles:hover, #installation-fifth-step-titles:hover, #installation-sixth-step-titles:hover, #installation-seventh-step-titles:hover {
+scale: 1.1;
 }
 
 #installation-steps {
-     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
-    gap: 10vh;
-    padding-top: 3vh; 
-    color: white;
-    margin-left: 12vw;
-      margin-right: 12vw;
-}
-
-#installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles, #installation-seventh-step-titles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   background: radial-gradient(circle, #0c305b, rgb(0, 0, 0)); 
-   border-radius: 2vw;
-   width: 70vw;
-   height: 40vw;
-   border: 1px solid #1893D4;
-box-shadow: 0 0 10px #1893D4;
+    margin-top: 7vw;
 }
 
 #installation-first-step-titles p, #installation-second-step-titles p, #installation-third-step-titles p, #installation-fourth-step-titles p, #installation-fifth-step-titles p, #installation-sixth-step-titles p, #installation-seventh-step-titles p {
-   border-radius: 2vw;
-   width: 50vw;
-   font-size: 2vw
+   padding: 1rem 3rem;
+   border-radius: 1rem;
+   width: 74vw;
+   font-size: 1.95vw;
 }
 
 #installation-first-step-titles a, #installation-sixth-step-titles a {
-    color: #14ECFC;
-    font-size: 2vw
+    font-size: 1.95vw;
 }
 
 #installation-first-step-titles h4, #installation-second-step-titles h4, #installation-third-step-titles h4, #installation-fourth-step-titles h4, #installation-fifth-step-titles h4, #installation-sixth-step-titles h4, #installation-seventh-step-titles h4 {
- color:#14ECFC;
- font-size: 2.5vw
+ font-size: 2.85vw;
 }
-
-
 
 #installation-first-step, #installation-second-step, #installation-third-step, #installation-fourth-step, #installation-fifth-step, #installation-sixth-step, #installation-seventh-step {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0vh;
+    justify-content: center;
+    gap: 0;
     color: white;
+     flex-direction: column;
 }
+
 
 #installation-first-step-pic, #installation-second-step-pic, #installation-third-step-pic, #installation-fourth-step-pic, #installation-fifth-step-pic, #installation-sixth-step-pic, #installation-seventh-step-pic {
 display: flex;
 justify-content: center;
 align-items: center;
-    width: 70vw;
-    height: 40vw;
-}
-}
-
-/* #installation-title {
-    display: flex;
-    justify-content: center;
-    color :#14ECFC;
-    margin-top: 19vh;
-    font-size: 3vw;
-}
-
-#installation-steps {
-     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
-    gap: 15vh;
-    padding-top: 5vh; 
-    color: white;
-    margin-left: 15vw;
-      margin-right: 15vw;
-}
-
-#installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   background: radial-gradient(circle, #0c305b, rgb(0, 0, 0)); 
-   border-radius: 2vw;
-   width: 30vw;
-   height: 25vw;
-   border: 1px solid #1893D4;
+    width: 74vw;
+    height: 22rem;
+    border-radius: 1rem;
+       border: 1px solid #1893D4;
 box-shadow: 0 0 10px #1893D4;
+border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+     border-bottom-right-radius: 1rem;
 }
 
-#installation-first-step-titles p, #installation-second-step-titles p, #installation-third-step-titles p, #installation-fourth-step-titles p, #installation-fifth-step-titles p, #installation-sixth-step-titles p {
-   padding: 1vw 3vw;
-   border-radius: 2vw;
-   width: 30vw;
-   font-size: 1.15vw
+#installation-first-step-pic:hover, #installation-second-step-pic:hover, #installation-third-step-pic:hover, #installation-fourth-step-pic:hover, #installation-fifth-step-pic:hover, #installation-sixth-step-pic:hover, #installation-seventh-step-pic:hover {
+scale: 1.1;
 }
 
-#installation-first-step-titles a {
-    color: #14ECFC;
-    font-size: 1.15vw
+#installation-seventh-step {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+    #installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles, #installation-seventh-step-titles {
+    border-top-left-radius: 1rem; 
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
 }
 
-#installation-first-step-titles h4, #installation-second-step-titles h4, #installation-third-step-titles h4, #installation-fourth-step-titles h4, #installation-fifth-step-titles h4, #installation-sixth-step-titles h4 {
- color:#14ECFC;
- font-size: 1.5vw
 }
 
+@media screen and (min-width: 701px) and (max-width: 1050px){
+    #installation-first-step-titles, #installation-second-step-titles, #installation-third-step-titles, #installation-fourth-step-titles, #installation-fifth-step-titles, #installation-sixth-step-titles, #installation-seventh-step-titles {
+    border-top-left-radius: 1rem; 
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+}
 
+#installation-first-step-pic, #installation-second-step-pic, #installation-third-step-pic, #installation-fourth-step-pic, #installation-fifth-step-pic, #installation-sixth-step-pic, #installation-seventh-step-pic {
+  border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+     border-bottom-right-radius: 1rem;
+}
 
-#installation-first-step, #installation-second-step, #installation-third-step, #installation-fourth-step, #installation-fifth-step, #installation-sixth-step {
-    display: flex;
+    #installation-first-step-titles p, #installation-second-step-titles p, #installation-third-step-titles p, #installation-fourth-step-titles p, #installation-fifth-step-titles p, #installation-sixth-step-titles p, #installation-seventh-step-titles p {
+   width: 32rem;
+}
+
+#installation-first-step, #installation-second-step, #installation-third-step, #installation-fourth-step, #installation-fifth-step, #installation-sixth-step, #installation-seventh-step {
     flex-direction: column;
-    align-items: center;
-    gap: 0vh;
-    color: white;
+    gap: 0;
 }
-
-#installation-first-step-pic, #installation-second-step-pic, #installation-third-step-pic, #installation-fourth-step-pic, #installation-fifth-step-pic, #installation-sixth-step-pic {
-display: flex;
-justify-content: center;
-align-items: center;
-    width: 30vw;
-    height: 20vw;
-    border-radius: 2vw;
-} */
+}
