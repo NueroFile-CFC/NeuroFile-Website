@@ -12,71 +12,84 @@ animation: fadeInUp 1s ease-out forwards;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* font-size: 21.5px; */
     font-family: 'Space Mono'
 }
 
 #home-video-title {
     display: flex;
-     gap: 0.36vw;
+     gap: .35rem;
     align-items: center;
     justify-content: center;
     color: #1893D4;  
     font-family: 'Space Mono';
-    margin-top: 11rem;
-    margin-bottom: .5rem;
+    margin-top: 10rem;
+    margin-bottom: .25rem;
 }
 
+#home-video-titles:hover {
+  transform: translateY(-.25rem);
+}
 
 #home-video-titles {
     border: 1px solid #1893D4;
     box-shadow: 0 0 10px #1893D4;
      background-color: black;
     border-radius: 1rem;
-    font-size: 1vw;
+    font-size: .9rem;
     color: white;
      font-family: 'Space Mono';
-     width: 8.6vw;
+     width: 7.25rem;
+     cursor: pointer;
 }
 
-#home-left-arrow{
+#home-left-arrow {
     display: flex;
- width: 3vw;
-    height: 2.5vw;
+ width: 2.5rem;
+    height: 2.25rem;
 background-color: black;
-border: 1px solid white;
+border: 1px solid #1893D4;
 box-shadow: 0 0 10px #1893D4;
+margin-top: .1rem;
+}
+
+#home-left-arrow:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#home-right-arrow:hover {
+  scale: 1.1;
+    cursor: pointer;
 }
 
 #home-left-arrow-button {
- width: 3vw;
-  height: 2.5vw;
+ width: 2.5rem;
+  height: 2.25rem;
 padding: 0;
 background-color: black;
-border: 1px solid white;
+border: none;
 }
 
 #home-right-arrow-button {
- width: 3vw;
-    height: 2.5vw;
+ width: 2.5rem;
+    height: 2.25rem;
     padding: 0;
 background-color: black;
-border: 1px solid white;
+border: none;
 box-shadow: 0 0 10px #1893D4;
 }
 
 #home-right-arrow {
     display:flex;
-  width: 3vw;
-    height: 2.5vw;
+  width: 2.5rem;
+    height: 2.25rem;
 padding: 0;
 background-color: black;
-border: 1px solid white;
+border: 1px solid #1893D4;
 }
 
 #home-demo {
-    width: 60.2vw;
-    height: 32vw;
+    width: 51rem;
     border: 1px solid #1893D4;
     box-shadow: 0 0 10px #1893D4;
 }
@@ -84,9 +97,9 @@ border: 1px solid white;
 #home-benefits {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
-    margin-top: 8vw;
-    width: 60vw;
-    gap: 4vw;
+    margin-top: 7rem;
+    width: 51rem;
+    gap: 4rem;
 } 
 
 #home-benefits p {
@@ -95,13 +108,18 @@ border: 1px solid white;
     align-items: center;
     justify-content: center;
     background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    padding: 2vw;
+    padding: 1.5rem;
     border: 1px solid #1893D4;
-    border-radius: 2vw;
+    border-radius: 2rem;
     box-shadow: 0 0 10px #1893D4;
     font-family: 'Space Mono';
-   font-size: 1.25vw;
-   height: 15vw;
+   font-size: 1rem;
+   height: 12rem;
+}
+
+#home-benefits p:hover {
+  transform: translateY(-.25rem);
+  scale: 1.1;
 }
 
 #home-install-box {
@@ -109,8 +127,8 @@ border: 1px solid white;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10vw;
-    margin-bottom: 5vw;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
 }
 
 #home-install {
@@ -118,18 +136,19 @@ border: 1px solid white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 5vw;
-     font-size: 2vw;
+    height: 5rem;
+     font-size: 1.65rem;
      color:#14ECFC;
+
 }
 
 #home-install button {
    background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
     border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 3vw;
-    padding: 1vw 2vw;
-    margin-top: 1.5vw;
+    border-radius: 3rem;
+    padding: .75rem 1.5rem;
+    margin-top: 2rem;
+    animation: shrinkGrow 1.25s infinite alternate;
 }
 
 #home-install a {
@@ -139,1157 +158,94 @@ border: 1px solid white;
     text-decoration: none;
     color: #1791D2;
     font-weight: bold;
-    font-size: 1.25vw;
+    font-size: 1.25rem;
     font-family: 'Space Mono'
 }
 
- @media screen and (max-width: 449px ){
+ /* #home-install button:hover {
+  transform: translateY(-.25rem);
+  cursor: pointer;
+ } */
 
-    body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.25vw;
-width: 10.4vw;
+ @keyframes shrinkGrow {
+  0% {
+    scale:.75;
+    box-shadow: 0 0 5px #1893D4;
   }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .6vw;
-    margin-top: 0vh;
-    padding-top: 17vh;
-    width: 75vw;
+  100% {
+    scale: 1.25;
+    box-shadow: 0 0 15px #1893D4;
   }
+ }
 
-  #home-demo {
-    width: 75vw;
-    height: 42vw;
-  }
-
-  #home-right-arrow-button {
-    width: 4vw;
-    height: 4vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-   width: 4vw;
-    height: 4vw;
-    border: 1px solid white;
-  }
-
-  #home-left-arrow-button {
-    width: 4vw;
-    height: 4vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-   width: 4vw;
-    height: 4vw;
-    border: 1px solid white;
-  }
-
-  #home-benefits {
- display: flex;
- align-items: center;
-flex-direction: column;
-justify-content: center;
-    gap: 2vh;
-    color: white;
-    width: 75vw;
-    padding-top: 3vh;
-  }
-
-  #home-benefits p{
-    padding: 4vw;
-     font-size: 2vw;
-  }
-
-  #home-install {
-   font-size: 2.5vw;
-   width: 80vw;
-    padding-top: 6vh;
-    padding-bottom: 6vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 1.5vw;
-    padding: 2vw;
-      margin-top: 1vh;
+  @media screen and (max-width: 990px) {
+#home-video-title {
+     gap: .4vw;
 }
-  #home-install a{
+
+#home-video-titles {
+    font-size: 1.4vw;
+     width: 11.51vw;
+}
+
+#home-left-arrow {
+ width: 4vw;
+    height: 3.5vw;
+    margin-top: 0;
+}
+
+#home-left-arrow-button {
+ width: 4vw;
+    height: 3.5vw;
+}
+
+#home-right-arrow-button {
+ width: 4vw;
+    height: 3.5vw;
+}
+
+#home-right-arrow {
+  width: 4vw;
+    height: 3.5vw;
+}
+
+#home-demo {
+    width: 80vw;
+}
+
+#home-benefits {
+  margin-top: 12vw;
+    width: 80vw;
+    gap: 8vw;
+} 
+
+#home-benefits p {
+   font-size: 1.75vw;
+   height: 20vw;
+}
+
+#home-install-box {
+margin-top: 14vw;
+}
+
+#home-install {
+    height: 5vw;
+     font-size: 2.6vw;
+}
+
+#home-install button {
+  padding: 1.1vw 2.2vw;
+    margin-top: 3.25vw;
+}
+
+#home-install a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #1791D2;
+    font-weight: bold;
     font-size: 2vw;
-  }
-      
+    font-family: 'Space Mono'
 }
-
-/* @media screen and (min-width: 450px) and (max-width: 849px ) and (min-height: 1201px) {
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
   }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    align-items: center;
-    padding-top: 10vh;
-   
-    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
-    gap: 5vw;
-   padding-right: 4vw;
-   padding-left: 7vw;
-    color: white;
-    width: 85vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 25vw;
-   width: 32vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vh;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-@media screen and (min-width: 450px) and (max-width: 849px ) and (max-height: 600px) {
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    align-items: center;
-    padding-top: 10vh;
-   
-    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
-    gap: 5vw;
-   padding-right: 4vw;
-   padding-left: 7vw;
-    color: white;
-    width: 85vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 25vw;
-   width: 32vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vh;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (min-width: 450px) and (max-width: 849px ) and (min-height: 601px) and (max-height: 1200px) {
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    align-items: center;
-    padding-top: 10vh;
-   
-    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
-    gap: 5vw;
-   padding-right: 4vw;
-   padding-left: 7vw;
-    color: white;
-    width: 85vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 25vw;
-   width: 32vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vh;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (min-width: 850px) and (max-width: 1199px ) and (min-height: 1201px) {
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    padding-top: 10vw;
-   
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 4vw;
-   padding-right: 6.5vw;
-   padding-left: 6.7vw;
-    color: white;
-    width: 84vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    justify-content: center;
-    font-size: 1.45vw;
-   height: 27vw;
-   width: 21vw;
-   padding: 4vw 4vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vw;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vw;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-@media screen and (min-width: 850px) and (max-width: 1199px ) and (max-height: 600px) {
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    padding-top: 10vw;
-   
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 5vw;
-   padding-right: 6.5vw;
-   padding-left: 6.7vw;
-    color: white;
-    width: 84vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 27vw;
-   width: 20vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vw;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vw;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (min-width: 850px) and (max-width: 1199px ) and (min-height: 601px) and (max-height: 1200px) {
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    padding-top: 10vw;
-   
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 5vw;
-   padding-right: 6.5vw;
-   padding-left: 6.7vw;
-    color: white;
-    width: 84vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 27vw;
-   width: 20vw;
-   
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vw;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vw;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-
-
-
-@media screen and (min-width: 1200px) and (max-width: 1999px) and (min-height: 500px){
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    padding-top: 10vw;
-   
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 5vw;
-   padding-right: 6.5vw;
-   padding-left: 6.7vw;
-    color: white;
-    width: 84vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 27vw;
-   width: 20vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vw;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vw;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1999px ) and (max-height: 499px){
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    padding-top: 10vw;
-   
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 5vw;
-   padding-right: 6.5vw;
-   padding-left: 6.7vw;
-    color: white;
-    width: 84vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 27vw;
-   width: 20vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vw;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vw;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-}
-
-
-@media screen and (min-width: 2000px ){
-
-      body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1.7vw;
- width: 14.2vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 20vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 70.5vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-     width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 5vw;
-    height: 5vw;
-  border: .1vh solid white;
-  }
-
-  #home-left-arrow-button {
- width: 5vw;
-    height: 5vw;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-  width: 5vw;
-    height: 5vw;
-    border: .1vh solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    padding-top: 10vw;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 5vw;
-   padding-right: 6.5vw;
-   padding-left: 6.7vw;
-    color: white;
-    width: 84vw;
-  }
-
-  #home-benefits li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.75vw;
-   height: 27vw;
-   width: 20vw;
-  }
-
-  #home-install {
-   font-size: 2vw;
-   width: 80vw;
-    padding-top: 15vw;
-    padding-bottom: 10vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vw;
-      width: 15vw;
-}
-  #home-install a{
-    font-size: 1.5vw;
-  }
-
-} */
-
-/* @media screen and (max-height: 600px ){
-     body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1vw;
- width: 14vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 25vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 63.7vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-    width: 2vw;
-    height: 3vh;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 2vw;
-    height: 3vh;
-    border: 1px solid white;
-  }
-
-  #home-left-arrow-button {
-    width: 2vw;
-    height: 3vh;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-     width: 2vw;
-    height: 3vh;
-    border: 1px solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    align-items: center;
-    padding-top: 10vh;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 5vh;
-    padding-right: 11.5vw;
-    padding-left: 11.5vw;
-    color: white
-  }
-
-  #home-benefits li {
-    padding: 3vw;
-    font-size: .93vw;
-  }
-
-  #home-install {
-   font-size: 1.5vw;
-   width: 80vw;
-    padding-top: 25vh;
-    padding-bottom: 20vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vh;
-}
-  #home-install a{
-    font-size: 1vw;
-  }
-}
-
-@media screen and (min-height: 601px ){
-     body {
-        overflow-x: hidden;
-    }
-    #home-video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-   #home-video-titles {
-font-size: 1vw;
- width: 14vw;
- padding: 0.5vh;
-  }
-
-  #home-video-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .7vw;
-    padding-top: 25vh;
-    padding-bottom: .8vh;
-  }
-
-  #home-demo {
-    width: 63.7vw;
-    height: auto;
-  }
-
-  #home-right-arrow-button {
-    width: 2vw;
-    height: 3vh;
-    border: 0px solid white;
-  }
-
-  #home-right-arrow {
-    width: 2vw;
-    height: 3vh;
-    border: 1px solid white;
-  }
-
-  #home-left-arrow-button {
-    width: 2vw;
-    height: 3vh;
-    border: 0px solid white;
-  }
-
-  #home-left-arrow {
-     width: 2vw;
-    height: 3vh;
-    border: 1px solid white;
-  }
-
-  #home-benefits {
-    display: grid;
-    align-items: center;
-    padding-top: 10vh;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 5vh;
-    padding-right: 11.5vw;
-    padding-left: 11.5vw;
-    color: white
-  }
-
-  #home-benefits li {
-    padding: 3vw;
-    font-size: .93vw;
-  }
-
-  #home-install {
-   font-size: 1.5vw;
-   width: 80vw;
-    padding-top: 25vh;
-    padding-bottom: 20vh;
-  }
-  #home-install button {
-   background: radial-gradient(circle, #082241, rgb(0, 0, 0)); 
-    border: 1px solid #1791D2;
-    box-shadow: 0 0 10px #1893D4;
-    border-radius: 30px;
-    padding: 1vw;
-      margin-top: 1.5vh;
-}
-  #home-install a{
-    font-size: 1vw;
-  }
-}
- */
